@@ -21,40 +21,6 @@
     </li>
   </ol>
   <hr>
-  <p>
-    import java.util.*; 
-public class KAPREKAR
-    {
-        public static void main()
-        {
-            int q,p,n,c=0;//initializing operators
-            Scanner in = new Scanner(System.in);
-            System.out.println("enter first number");// taking value of starting range
-            p= in.nextInt();//taking value of p 
-            System.out.println("enter second number");// taking value of closing range
-            q= in.nextInt();//taking value of q
-            System.out.println("KAPREKAR number between "+p+ " and "+q+ " are");
-            for(n=p;n<=q;n++)
-               {    
-                   int sq = n*n;// squaring of the+ number
-                   String s = Integer.toString(sq);// coverting to string 
-                   int l= s.length();// finding length
-                   int mid= l/2;//finding mid
-                   String s1 = s.substring(0,mid);// converting to substring
-                   String s2 = s.substring(mid);// converting to substring
-                   int a = Integer.parseInt(s1);// converting to substring s1 to integer
-                   int b = Integer.parseInt(s2);// converting to substring s2 to integer
-                   int sum = a+b ; // adding
-                   if(sum==n)// condition
-                            {
-                                System.out.println(n);
-                                c++;
-                            }
-                }            
-            System.out.println("frequency is: "+c);
-        }
-    }
-  </p>
 </body>
 
 </html>
